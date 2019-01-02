@@ -22,6 +22,20 @@ public class Board {
         }
     }
 
+    /*
+        Positions on the board are defined as follows:
+        -------
+        |0|1|2|
+        -------
+        |3|4|5|
+        -------
+        |6|7|8|
+        -------
+     */
+    public void setCell(Input input, int position) {
+        board[position / 3][position % 3] = input;
+    }
+
     public Input[][] getBoard() {
         return board;
     }
